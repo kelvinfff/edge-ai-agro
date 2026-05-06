@@ -16,5 +16,6 @@ atinge 25% de umidade — tudo processado no próprio hardware.
 pip install -r requirements.txt
 python3 demo_simples.py
 O gráfico será salvo em grafico_irrigacao_edge.png.
+```
 Licença
 MIT
