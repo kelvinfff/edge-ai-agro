@@ -10,9 +10,6 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-OUTPUT_DIR = "resultados"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-
 # ============================================================
 # Dados simulados: sensor de umidade do solo ao longo do tempo
 # ============================================================
@@ -95,7 +92,7 @@ ax.set_ylim(0, 70)
 ax.grid(True, alpha=0.3)
 
 plt.tight_layout()
-caminho = os.path.join(OUTPUT_DIR, "grafico_irrigacao_edge.png")
+caminho = "grafico_irrigacao_edge.png"
 fig.savefig(caminho, bbox_inches="tight")
 plt.close(fig)
 
